@@ -148,13 +148,6 @@ class moodAnalyzer
 			cout << "Analytical: \t\t" << varAnalytical << "%" << endl;
 			cout << "Confident: \t\t" << varConfident << "%" << endl;
 		}
-		void createUserDatabase()
-		{
-			name = name + userName + ".txt";
-			userFile.open(name, ios::out);
-			userFile << "UserName: " << name << endl;
-			userFile.close();
-		}
 		void enterUserDatabase()
 		{
 			time_t t = time(0);
@@ -162,8 +155,10 @@ class moodAnalyzer
         		string p = to_string(now->tm_mday);
         		string q = to_string((now->tm_mon + 1));
         		string r = to_string((now->tm_year + 1900));
-			userFile.open(name, ios::in | ios::out);
+        		name = name + userName + ".txt";
+			userFile.open(name, ios::in | ios::out | ios::app);
 			userFile << "Mood analysis for date: " << p << "." << q << "." << r << "\n";
+			userFile << "You entered: \"" << str << "\""<< endl;
 			userFile << "\nAnger: \t\t\t"<< varAnger << "%" << endl;
 			userFile << "Fear: \t\t\t" << varFear << "%" << endl;
 			userFile << "Joy: \t\t\t" << varJoy << "%" << endl;
@@ -181,8 +176,9 @@ class moodAnalyzer
 				checkStatus >> fileName;
 				if (strstr(fileName,userName) != 0)
 				{
-					userFile.open(name, ios::app);
-					cout << "Mood Analysis\n\n";
+					userFile.open(name, ios::in | ios:: out | ios::app);
+					system("clear");
+					cout << "*Mood Analysis*\n";
 					string command = "cat " + name;
 					int n = command.length();
 					char charArray[n+1];
@@ -212,12 +208,11 @@ int main()
 	usleep(500000);
 	O1.analyzer();
 	O1.displayDataConsole();
-	O1.createUserDatabase();
 	O1.enterUserDatabase();
 	cout << "\nDo you want to check recent trends(Y/N)? ";
 	cin >> ans;
 	if (ans == 'Y' || ans == 'y')
 		O1.checkExistingUser();
 	else
-		cout << "\nThank you for using Mood Analyzer\n";
+		cout << "Thank you for using Mood Analyzer\n";
 }
