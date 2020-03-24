@@ -65,7 +65,7 @@ class moodAnalyzer
 				while (Confidence.eof() == 0)
 				{
 					Confidence >> tempConfidence;
-					if(strstr(arr[i],tempConfidence) != 0)
+					if(strcasestr(arr[i],tempConfidence) != 0)
 					{
 						varConfident = 1;
 						flag = 1;
@@ -76,7 +76,7 @@ class moodAnalyzer
 				while (Analytical.eof() == 0)
 				{
 					Analytical >> tempAnalytical;
-					if (strstr(arr[i],tempAnalytical) != 0)
+					if (strcasestr(arr[i],tempAnalytical) != 0)
 					{
 						varAnalytical = 1;
 						flag = 1;
@@ -87,7 +87,7 @@ class moodAnalyzer
 				while (Sadness.eof() == 0)
 				{
 					Sadness >> tempSadness;
-					if (strstr(arr[i],tempSadness) != 0)
+					if (strcasestr(arr[i],tempSadness) != 0)
 					{
 						varSadness = 1;
 						flag = 1;
@@ -98,7 +98,7 @@ class moodAnalyzer
 				while (Joy.eof() == 0)
 				{
 					Joy >> tempJoy;
-					if (strstr(arr[i],tempJoy) != 0)
+					if (strcasestr(arr[i],tempJoy) != 0)
 					{
 						varJoy = 1;
 						flag = 1;
@@ -109,7 +109,7 @@ class moodAnalyzer
 				while (Fear.eof() == 0)
 				{
 					Fear >> tempFear;
-					if (strstr(arr[i],tempFear) != 0)
+					if (strcasestr(arr[i],tempFear) != 0)
 					{
 						varFear = 1;
 						flag = 1;
@@ -120,7 +120,7 @@ class moodAnalyzer
 				while (Anger.eof() == 0)
 				{	
 					Anger >> tempAnger;
-					if (strstr(arr[i],tempAnger) != 0)
+					if (strcasestr(arr[i],tempAnger) != 0)
 					{
 						varAnger = 1;
 						flag = 1;
