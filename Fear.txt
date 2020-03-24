@@ -41,6 +41,7 @@ tremor
 trepidation
 bête noire
 chickenheartedness
-cold feet
-cold sweat
+cold
+feet
+sweat
 recreancy

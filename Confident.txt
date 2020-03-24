@@ -6,11 +6,12 @@ hopeful
 positive
 sanguine
 satisfied
-self-assured
-self-reliant
+self
+assured
+reliant
 sure
 upbeat
-bet on
+bet
 brave
 cocksure
 counting on
@@ -27,7 +28,7 @@ puffed up
 pushy
 racked
 secure
-self-sufficient
+sufficient
 trusting
 unafraid
 undaunted

@@ -1,4 +1,5 @@
 amusement
+best
 bliss
 charm
 cheer
@@ -44,6 +45,8 @@ sport
 transport
 treasure
 treat
-good humor
-pride and joy
+good
+humor
+pride
+joy
 regalement

@@ -1,6 +1,8 @@
 anguish
 grief
+sad
 heartache
+sick
 heartbreak
 hopelessness
 melancholy
@@ -32,12 +34,13 @@ mournfulness
 sorrowfulness
 tribulation
 woe
-blue devils
-blue funk
+blue
+devils
+funk
 broken heart
 dismals
 downcastness
 grieving
-heavy heart
-the blues
-the dumps
+heavy
+blues
+dumps
